@@ -27,9 +27,9 @@ function App() {
           <Header />
 
           <Routes>
-            <Route path="" element={<HomePage positionImage={positionImage}/>} />
-            <Route path="/my-works" element={<MyWorks />} />
-            <Route path="/resume" element={<Resume />} />
+            <Route path="/my_resume_by_react/dist/" element={<HomePage positionImage={positionImage}/>} />
+            <Route path="/my_resume_by_react/dist/my-works" element={<MyWorks />} />
+            <Route path="/my_resume_by_react/dist/resume" element={<Resume />} />
           </Routes>
 
           <Footer />

@@ -14,9 +14,9 @@ const Header = () => {
             </div>
 
             <div className="leftHeader">
-                <Link to='/my-works'><button><DocumentScanner /><p>My Works</p></button></Link>
-                <Link to='/resume'><button><Person /><p>Resume</p></button></Link>
-                <Link to='/'><button><House /><p>Home</p></button></Link>
+                <Link to='/my_resume_by_react/dist/my-works'><button><DocumentScanner /><p>My Works</p></button></Link>
+                <Link to='/my_resume_by_react/dist/resume'><button><Person /><p>Resume</p></button></Link>
+                <Link to='/my_resume_by_react/dist/'><button><House /><p>Home</p></button></Link>
             </div>
 
         </div>
