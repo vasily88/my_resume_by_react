@@ -7,7 +7,7 @@ const SocialButton = () => {
         <>
             <Link to="/">
                 <button className="social-btn">
-                    <div class="hover">
+                    <div className="hover">
                         <span></span>
                         <span></span>
                         <span></span>
