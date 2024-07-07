@@ -1,151 +1,187 @@
 .btn {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-    font-size: 1.4vw;
-    color: #fff;
-    background: #000;
-    padding: 1vw 3vw;
-    font-weight: 900;
-    border-radius: 0.5vw;
-    box-shadow: 1px 1px 3px #000;
-    
-  }
-  .btn .hover {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    overflow: hidden;
-  }
-  .btn .hover span {
-    position: relative;
-    display: block;
-    left: -0.7vw;
-    height: 0.7vw;
-    width: 0;
-    content: "";
-  }
-  .btn .hover span:after {
-    position: absolute;
-    display: block;
-    right: -0.5vw;
-    width: 0.5vw;
-    height: 0.5vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  font-size: 1.4vw;
+  color: #fff;
+  background: #000;
+  padding: 1vw 3vw;
+  font-weight: 900;
+  border-radius: 0.5vw;
+  box-shadow: 1px 1px 3px #000;
+}
+.btn .hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+.btn .hover span {
+  position: relative;
+  display: block;
+  left: -0.7vw;
+  height: 0.7vw;
+  width: 0;
+  content: "";
+}
+.btn .hover span:after {
+  position: absolute;
+  display: block;
+  right: -0.5vw;
+  width: 0.5vw;
+  height: 0.5vw;
+  background: #fff;
+  content: "";
+}
+.btn .hover span:nth-child(odd):after {
+  background: rgba(0, 0, 0, 0.35);
+}
+.btn .hover span:first-child {
+  left: -4vw;
+  transition: all 0.3s steps(8);
+}
+.btn .hover span:nth-child(2) {
+  left: -2vw;
+  transition: all 0.325s steps(8);
+}
+.btn .hover span:nth-child(3) {
+  left: -3vw;
+  transition: all 0.35s steps(8);
+}
+.btn .hover span:nth-child(4) {
+  transition: all 0.4s steps(8);
+}
+.btn .hover span:nth-child(5) {
+  left: -1vw;
+  transition: all 0.375s steps(8);
+}
+.btn:after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 0.2vw;
+  z-index: -2;
+  content: "";
+}
+.btn:hover {
+  color: #fff;
+}
+.btn:hover,
+.btn:focus {
+  color: #fff;
+}
+.btn:hover .hover span:first-child,
+.btn:focus .hover span:first-child {
+  width: calc(100% + 4vw);
+}
+.btn:hover .hover span:first-child:after,
+.btn:focus .hover span:first-child:after {
+  animation: whiteBlack 0.3s 0s 1;
+}
+.btn:hover .hover span:nth-child(2),
+.btn:focus .hover span:nth-child(2) {
+  width: calc(100% + 2vw);
+  transition: all 0.375s steps(8);
+}
+.btn:hover .hover span:nth-child(2):after,
+.btn:focus .hover span:nth-child(2):after {
+  animation: whiteBlack 0.3s 0.06s 1 reverse backwards;
+}
+.btn:hover .hover span:nth-child(3),
+.btn:focus .hover span:nth-child(3) {
+  width: calc(100% + 3vw);
+  transition: all 0.35s steps(8);
+}
+.btn:hover .hover span:nth-child(3):after,
+.btn:focus .hover span:nth-child(3):after {
+  animation: whiteBlack 0.3s 0.05s 1 forwards;
+}
+.btn:hover .hover span:nth-child(4),
+.btn:focus .hover span:nth-child(4) {
+  width: calc(100% + 0.8vw);
+  transition: all 0.3s steps(8);
+}
+.btn:hover .hover span:nth-child(4):after,
+.btn:focus .hover span:nth-child(4):after {
+  animation: whiteBlack 0.3s 0s 1 reverse backwards;
+}
+.btn:hover .hover span:nth-child(5),
+.btn:focus .hover span:nth-child(5) {
+  width: calc(100% + 1vw);
+  transition: all 0.325s steps(8);
+}
+.btn:hover .hover span:nth-child(5):after,
+.btn:focus .hover span:nth-child(5):after {
+  animation: whiteBlack 0.3s 0.07s 1 forwards;
+}
+
+@keyframes whiteBlack {
+  0%,
+  24% {
     background: #fff;
-    content: "";
   }
-  .btn .hover span:nth-child(odd):after {
+  25%,
+  49% {
     background: rgba(0, 0, 0, 0.35);
   }
-  .btn .hover span:first-child {
-    left: -4vw;
-    transition: all 0.3s steps(8);
+  50%,
+  74% {
+    background: #fff;
   }
-  .btn .hover span:nth-child(2) {
-    left: -2vw;
-    transition: all 0.325s steps(8);
+  75%,
+  100% {
+    background: rgba(0, 0, 0, 0.35);
   }
-  .btn .hover span:nth-child(3) {
-    left: -3vw;
-    transition: all 0.35s steps(8);
+}
+.btn lottie-player {
+  width: 7vw;
+  height: 7vw;
+  position: absolute;
+  top: -1vw;
+  left: 2vw;
+}
+.buttonsFrontPage a:last-child .btn lottie-player {
+  width: 9vw;
+  height: 9vw;
+  top: -2vw;
+  left: 1vw;
+}
+.buttonsFrontPage .btn {
+  width: 20vw;
+  height: 5vw;
+  padding: 0 0 0 4vw;
+  background: linear-gradient(310deg, #f490ff, #be0786, #4eafff, #700099);
+  font-size: 1.5vw;
+  text-shadow: 0 3px black;
+}
+
+@media only screen and (max-width: 768px) {
+  .buttonsFrontPage .btn {
+    width: 38vw;
+    height: 12vw;
+    padding: 0 0 0 10vw;
+    font-size: 4.5vw;
   }
-  .btn .hover span:nth-child(4) {
-    transition: all 0.4s steps(8);
+  .buttonsFrontPage a:last-child .btn lottie-player {
+    width: 25vw;
+    height: 25vw;
+    top: -6vw;
+    left: -6vw;
   }
-  .btn .hover span:nth-child(5) {
-    left: -1vw;
-    transition: all 0.375s steps(8);
-  }
-  .btn:after {
+  .btn lottie-player {
+    width: 17vw;
+    height: 17vw;
     position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 0.2vw;
-    z-index: -2;
-    content: "";
-  }
-  .btn:hover {
-    color: #fff;
-  }
-  .btn:hover, .btn:focus {
-    color: #fff;
-  }
-  .btn:hover .hover span:first-child, .btn:focus .hover span:first-child {
-    width: calc(100% + 4vw);
-  }
-  .btn:hover .hover span:first-child:after, .btn:focus .hover span:first-child:after {
-    animation: whiteBlack 0.3s 0s 1;
-  }
-  .btn:hover .hover span:nth-child(2), .btn:focus .hover span:nth-child(2) {
-    width: calc(100% + 2vw);
-    transition: all 0.375s steps(8);
-  }
-  .btn:hover .hover span:nth-child(2):after, .btn:focus .hover span:nth-child(2):after {
-    animation: whiteBlack 0.3s 0.06s 1 reverse backwards;
-  }
-  .btn:hover .hover span:nth-child(3), .btn:focus .hover span:nth-child(3) {
-    width: calc(100% + 3vw);
-    transition: all 0.35s steps(8);
-  }
-  .btn:hover .hover span:nth-child(3):after, .btn:focus .hover span:nth-child(3):after {
-    animation: whiteBlack 0.3s 0.05s 1 forwards;
-  }
-  .btn:hover .hover span:nth-child(4), .btn:focus .hover span:nth-child(4) {
-    width: calc(100% + 0.8vw);
-    transition: all 0.3s steps(8);
-  }
-  .btn:hover .hover span:nth-child(4):after, .btn:focus .hover span:nth-child(4):after {
-    animation: whiteBlack 0.3s 0s 1 reverse backwards;
-  }
-  .btn:hover .hover span:nth-child(5), .btn:focus .hover span:nth-child(5) {
-    width: calc(100% + 1vw);
-    transition: all 0.325s steps(8);
-  }
-  .btn:hover .hover span:nth-child(5):after, .btn:focus .hover span:nth-child(5):after {
-    animation: whiteBlack 0.3s 0.07s 1 forwards;
-  }
-  
-  @keyframes whiteBlack {
-    0%, 24% {
-      background: #fff;
-    }
-    25%, 49% {
-      background: rgba(0, 0, 0, 0.35);
-    }
-    50%, 74% {
-      background: #fff;
-    }
-    75%, 100% {
-      background: rgba(0, 0, 0, 0.35);
-    }
-  }
-  .btn lottie-player{
-    width: 7vw;
-    height: 7vw;
-    position: absolute;
-    top: -1vw;
-    left: 2vw;
-  }
-  .buttonsFrontPage a:last-child .btn lottie-player{
-    width: 9vw;
-    height: 9vw;
     top: -2vw;
-    left: 1vw;
+    left: -1vw;
   }
-  .buttonsFrontPage .btn{
-width: 20vw;
-    height: 5vw;
-    padding: 0 0 0 4vw;
-    background: linear-gradient(310deg, #f490ff, #be0786, #4eafff, #700099);
-    font-size: 1.5vw;
-    text-shadow: 0 3px black;
-  }
+}
