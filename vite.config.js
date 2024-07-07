@@ -4,5 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   base: '/my_resume_by_react/dist/',
+  // base: './',
   plugins: [react()],
 })

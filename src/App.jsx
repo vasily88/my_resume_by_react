@@ -29,12 +29,13 @@ function App() {
           <Routes>
             <Route path="/my_resume_by_react/dist/" element={<HomePage positionImage={positionImage}/>} />
             <Route path="/my_resume_by_react/dist/my-works" element={<MyWorks />} />
-            <Route path="/my_resume_by_react/dist/resume" element={<Resume />} />
+            {/* <Route path="/" element={<HomePage positionImage={positionImage}/>} />
+            <Route path="/my-works" element={<MyWorks />} /> */}
           </Routes>
 
           <Footer />
 
-          <Sidebar />
+          {/* <Sidebar /> */}
         </div>
       </div>
 

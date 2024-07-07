@@ -6,7 +6,26 @@ const Button = (props) => {
 
     return(
         <>
-            <Link to={props.link} >
+            {props.link ?
+                <Link to={props.link} >
+                    <button className="btn" >
+                        <lottie-player 
+                            src={props.lottieImageUrl}
+                            background="transparent"  
+                            speed="1"  
+                            loop autoplay
+                        ></lottie-player>
+                        <div className="hover">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        {props.txt}
+                    </button>
+                </Link>
+            :
                 <button className="btn" >
                     <lottie-player 
                         src={props.lottieImageUrl}
@@ -23,7 +42,7 @@ const Button = (props) => {
                     </div>
                     {props.txt}
                 </button>
-            </Link>
+            }
         </>
     )
 }

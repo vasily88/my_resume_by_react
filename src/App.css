@@ -1,22 +1,22 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Assistant", sans-serif;
   box-sizing: border-box;
 }
-button{
+button {
   background: transparent;
   border: none;
 }
-a{
+a {
   color: inherit;
   text-decoration: none;
 }
-.mouse{
+.mouse {
   width: 2vw;
   height: 2vw;
   background-color: #000;
-  opacity: .5;
+  opacity: 0.5;
   position: fixed;
   pointer-events: none;
   border-radius: 50vw;
@@ -25,31 +25,31 @@ a{
   align-items: center;
   justify-content: center;
 }
-.mouse span{
+.mouse span {
   width: 5px;
   height: 5px;
   background-color: red;
   border-radius: 50vw;
 }
-.main{
+.main {
   background-color: #f2f0ee;
   padding: 5vw 0;
 }
-.centerPage{
+.centerPage {
   width: 80vw;
   height: fit-content;
   margin: 0 auto;
   background-color: #fff;
   border: 0 solid #e2e8f0;
-  box-shadow: 0 1vw 2vw -0.3vw rgba(0,0,0,.25);
+  box-shadow: 0 1vw 2vw -0.3vw rgba(0, 0, 0, 0.25);
   border-radius: 0.5vw;
   position: relative;
 }
-.about{
+.about {
   position: relative;
   height: 30vw;
 }
-.myImage{
+.myImage {
   position: absolute;
   top: 4vw;
   right: 5vw;
@@ -58,14 +58,14 @@ a{
   border-radius: 50vw;
   box-shadow: 1px 1px 6px #000;
 }
-.header{
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1vw 3vw;
 }
 
-.header button{
+.header button {
   background-color: transparent;
   border: none;
   display: flex;
@@ -73,46 +73,50 @@ a{
   justify-content: center;
   gap: 0.3vw;
   padding: 0.5vw 1vw;
-  transition: all .2s;
+  transition: all 0.2s;
   cursor: pointer;
 }
-.leftHeader{
+.leftHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1vw;
 }
-.rightHeader button a{
+.rightHeader button a {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.3vw;
 }
-.header button:hover{
+.header button:hover {
   background-color: #e45447;
   color: #f2f0ee;
-  box-shadow: 0 1rem 2rem rgba(43,41,41,.4);
+  box-shadow: 0 1rem 2rem rgba(43, 41, 41, 0.4);
   transform: rotate(-5deg) scale(1.1);
 }
-.aboutTxt{
+.aboutTxt {
   position: absolute;
-  top: 14vw;
-  right: 43vw;
+  top: 7vw;
+  right: 34vw;
+  width: 37vw;
 }
-.aboutTxt h1{
-  font-size: 4vw;
+.aboutTxt h1 {
+  font-size: 5.6vw;
   font-weight: 900;
-  color: #989595;
   text-transform: uppercase;
+  background: linear-gradient(253deg, #f490ff, #be0786, #4eafff, #700099);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
 }
-.aboutTxt .abotTextSubTitle{
+.aboutTxt .abotTextSubTitle {
   font-size: 1.8vw;
   color: #2d2d2d;
   font-weight: 400;
   margin-top: 0.5vw;
   text-transform: uppercase;
 }
-.box{
+.box {
   width: 5vw;
   height: 3vw;
   background: #2d2d2d;
@@ -121,11 +125,11 @@ a{
   justify-content: center;
   border-radius: 0.5vw;
   position: absolute;
-  top: -6vw;
-  right: 10vw;
+  top: -5vw;
+  left: 12vw;
 }
-.box::after{
-  content: '';
+.box::after {
+  content: "";
   width: 0vw;
   height: 0vw;
   position: absolute;
@@ -136,11 +140,11 @@ a{
   border-bottom: 2vw solid #2d2d2d;
   transform: rotate(180deg);
 }
-.box p{
-font-size: 1.2vw;
-color: #fff;
+.box p {
+  font-size: 1.2vw;
+  color: #fff;
 }
-.aboutContent{
+.aboutContent {
   width: 60vw;
   height: fit-content;
   background: #1a1a1a;
@@ -185,22 +189,22 @@ color: #fff;
     box-shadow: 0px 0px 20px #4eafff;
   }
 }
-.rightAboutContent{
+.rightAboutContent {
   width: 90vw;
   margin-left: 3vw;
   overflow: hidden;
 }
-.leftAboutContent p{
+.leftAboutContent p {
   font-size: 1.1vw;
   margin-top: 1vw;
 }
-.leftAboutContent h3{
+.leftAboutContent h3 {
   font-size: 2.4vw;
 }
-.leftAboutContent{
+.leftAboutContent {
   z-index: 1;
 }
-.buttonsFrontPage{
+.buttonsFrontPage {
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -210,23 +214,24 @@ color: #fff;
   gap: 5vw;
   margin-top: 5vw;
 }
-.footer{
+.footer {
   width: 100%;
   text-align: center;
   margin: 10vw 0 0 0;
 }
-.footer h4{
-font-size: 1.4vw;
-text-transform: uppercase;
+.footer h4 {
+  font-size: 1.4vw;
+  text-transform: uppercase;
 }
-.footer h5{
-font-size: 1vw;
-text-transform: uppercase;
-}
-.menuFooter p{
+.footer h5 {
   font-size: 1vw;
+  text-transform: uppercase;
 }
-.menuFooter{
+.menuFooter p {
+  font-size: 1vw;
+  color: #fff;
+}
+.menuFooter {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -234,10 +239,14 @@ text-transform: uppercase;
   margin-top: 1vw;
   flex-direction: row-reverse;
 }
-.menuFooter p{
+.menuFooter p {
   font-size: 1vw;
+  color: #fff;
 }
-.hrFooter{
+.menuFooter a {
+  color: #fff;
+}
+.hrFooter {
   width: 70vw;
   height: 2px;
   background: #000;
@@ -245,19 +254,20 @@ text-transform: uppercase;
   padding: 0 5vw;
   box-sizing: border-box;
 }
-.contentFooter{
+.contentFooter {
   padding: 2vw;
+  background-color: #000;
 }
-.myWorks{
+.myWorks {
   position: relative;
 }
-.myWorks h3{
+.myWorks h3 {
   font-size: 3vw;
   text-align: center;
   margin: 5vw 0;
   text-transform: uppercase;
 }
-.wrapperMyWorks{
+.wrapperMyWorks {
   padding: 0 5vw;
   display: flex;
   align-items: center;
@@ -266,7 +276,7 @@ text-transform: uppercase;
   gap: 2vw;
   text-align: center;
 }
-.singleWork{
+.singleWork {
   width: 22vw;
   height: 24vw;
   overflow: hidden;
@@ -274,20 +284,20 @@ text-transform: uppercase;
   cursor: pointer;
   position: relative;
 }
-.singleWork h4{
+.singleWork h4 {
   font-size: 1.4vw;
   padding: 1vw;
   line-height: 1;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
-.wrapperSingleWork{
+.wrapperSingleWork {
   width: 100%;
   height: 20vw;
   position: relative;
   overflow: hidden;
   padding: 1vw;
 }
-.imageWork{
+.imageWork {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -295,7 +305,7 @@ text-transform: uppercase;
   border: 1px solid #ccc;
   box-shadow: 1px 1px 3px #ccc;
 }
-.hoverSingleWork{
+.hoverSingleWork {
   position: absolute;
   top: 0;
   right: 0;
@@ -310,11 +320,11 @@ text-transform: uppercase;
   opacity: 0;
   transition: 0.6s ease-in-out;
 }
-.singleWork:hover .hoverSingleWork{
+.singleWork:hover .hoverSingleWork {
   opacity: 0.9;
   transition: 0.6s ease-in-out;
 }
-.desriptionWork{
+.desriptionWork {
   color: #fff;
   margin-top: 2vw;
   padding: 0 1vw;
@@ -322,38 +332,174 @@ text-transform: uppercase;
   font-size: 1.1vw;
   font-weight: 100;
 }
-.iconsSingleWork{
+.iconsSingleWork {
   position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
 }
-.iconsSingleWork a{
-width: 3vw;
+.iconsSingleWork a {
+  width: 3vw;
 }
-.iconsSingleWork a:hover svg{
-transform: scale(1.15);
-transition: 0.3s all;
+.iconsSingleWork a:hover svg {
+  transform: scale(1.15);
+  transition: 0.3s all;
 }
-.iconsSingleWork p{
-font-size: 1vw;
-text-align: center;
-color: #fff;
+.iconsSingleWork p {
+  font-size: 1vw;
+  text-align: center;
+  color: #fff;
 }
-.iconsSingleWork a svg{
+.iconsSingleWork a svg {
   width: 3vw;
   height: 3vw;
   background: #fff;
   border-radius: 50vw;
   transition: 0.3s all;
-transform: scale(1);
+  transform: scale(1);
 }
 
-.sidebarWrapper{
+.sidebarWrapper {
   position: fixed;
   top: 12vw;
   left: 11vw;
   width: 4vw;
   height: fit-content;
+}
+
+.imageLogo {
+  width: 16vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    padding: 4vw 3vw;
+    flex-wrap: wrap;
+    gap: 2vw;
+  }
+  .centerPage {
+    width: 90vw;
+  }
+  .leftHeader {
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+  .about {
+    height: 110vw;
+  }
+  .myImage {
+    top: 50vw;
+    right: 17.5vw;
+    width: 55vw;
+    height: 55vw;
+  }
+  .aboutTxt {
+    top: 8vw;
+    right: 4vw;
+    width: 82vw;
+  }
+  .aboutTxt h1 {
+    font-size: 11.6vw;
+  }
+  .box {
+    width: 13vw;
+    height: 6vw;
+    border-radius: 1.5vw;
+    top: -9vw;
+    left: 12vw;
+  }
+  .box p {
+    font-size: 3.2vw;
+    top: -0.3vw;
+    position: relative;
+  }
+  .box::after {
+    top: 6vw;
+    right: 7vw;
+  }
+  .aboutContent {
+    width: 80vw;
+    flex-direction: column-reverse;
+        margin: 4vw auto 8vw;
+  }
+  .leftAboutContent h3 {
+    font-size: 6.4vw;
+}
+.leftAboutContent p {
+    font-size: 4.3vw;
+    margin-top: 1vw;
+}
+.leftAboutContent {
+    z-index: 1;
+    padding: 4vw;
+}
+.buttonsFrontPage .btn {
+    width: 38vw;
+    height: 12vw;
+    padding: 0 0 0 10vw;
+    font-size: 4.5vw;
+}
+.buttonsFrontPage a:last-child .btn lottie-player {
+    width: 25vw;
+    height: 25vw;
+    top: -6vw;
+    left: -6vw;
+}
+.btn lottie-player {
+    width: 17vw;
+    height: 17vw;
+    position: absolute;
+    top: -2vw;
+    left: -1vw;
+}
+.imageLogo {
+    width: 40vw;
+}
+.contentFooter {
+    padding: 5vw;
+}
+.menuFooter p {
+    font-size: 4vw;
+}
+.menuFooter {
+    gap: 3vw;
+    margin-top: 3vw;
+}
+.myWorks h3 {
+    font-size: 7vw;
+}
+.wrapperMyWorks {
+    gap: 6vw;
+    flex-direction: column;
+}
+.singleWork {
+    width: 62vw;
+    height: 64vw;
+}
+.singleWork h4 {
+        font-size: 4.4vw;
+        padding: 3vw 0 1vw;
+}
+.wrapperSingleWork {
+    width: 100%;
+    height: 55vw;
+    padding: 3vw;
+}
+.iconsSingleWork a svg {
+    width: 9vw;
+    height: 9vw;
+}
+.iconsSingleWork a {
+    width: 12vw;
+}
+.iconsSingleWork p {
+    font-size: 3.3vw;
+}
+.desriptionWork {
+    margin-top: 4vw;
+    padding: 0 4vw;
+    font-size: 3.3vw;
+    font-weight: 100;
+}
 }
